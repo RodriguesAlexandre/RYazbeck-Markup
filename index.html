@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processo Markup Revit | R. Yazbeck</title>
+    <!-- Carrega Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte Inter como padrão */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray for modern feel */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Cores da Identidade Visual (Melhor Contraste) */
+        .color-primary {
+            background-color: #0d285b; /* Darker Blue for Header/Footer */
+        }
+        .color-secondary {
+            color: #1e3a8a; /* Deep Blue for accents */
+        }
+        .btn-whatsapp {
+            background-color: #25d366; /* WhatsApp Green */
+            transition: background-color 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho Principal -->
+    <header class="color-primary text-white shadow-2xl py-8 md:py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-2">Manual de Processo de Markup</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">R. Yazbeck | Automação e Padrão BIM</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 flex-grow">
+
+        <!-- Seção 1: Visão Geral e Automação - Cards aprimorados com 4 etapas -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-indigo-400 pb-2 mb-8">Etapas Críticas e Automações do Processo</h2>
+            
+            <!-- Grid com 4 colunas em desktop, 2 em tablet, 1 em mobile -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Card 1: Coordenadas Famílias (Antigo QC 1) - Cor Verde -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl border-t-8 border-green-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-start mb-4">
+                        <span class="text-3xl mr-3 text-green-600">
+                            <!-- Ícone de Coordenadas/Localização -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-0.5">1. Coordenadas Famílias</h3>
+                    </div>
+                    <!-- TEXTO REVISADO E SEM NEGRITO -->
+                    <p class="text-sm text-gray-700 leading-relaxed">Automação que verifica se todos os modelos (Estrutura, Arquitetura, Instalações, etc.) estão na mesma versão, com as famílias atualizadas e, o mais importante, se possuem as coordenadas compartilhadas idênticas (Comando Coordenadas/Alinhamento).</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full shadow-md">Verificação Inicial</span>
+                </div>
+
+                <!-- Card 2: Verificar Alinhamento (Novo Card) - Cor Amarela -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl border-t-8 border-yellow-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-start mb-4">
+                        <span class="text-3xl mr-3 text-yellow-600">
+                            <!-- Ícone de Alinhamento/Regra -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10H3"/><path d="M21 6H3"/><path d="M21 14H3"/><path d="M21 18H3"/></svg>
+                        </span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-0.5">2. Verificar Alinhamento</h3>
+                    </div>
+                    <!-- TEXTO NOVO E DETALHADO -->
+                    <p class="text-sm text-gray-700 leading-relaxed font-semibold">PREMISSA: Estrutura deve estar vinculada dentro do arquivo.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed mt-1">O comando verifica se o topo da furação está alinhado de fato com a Laje, emitindo um relatório em Excel para correção imediata.</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full shadow-md">QC de Furações</span>
+                </div>
+
+                <!-- Card 3: Criação do Arquivo Padrão (Antigo Card 2) - Cor Laranja/Índigo -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl border-t-8 border-indigo-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-start mb-4">
+                        <span class="text-3xl mr-3 text-indigo-600">
+                            <!-- Ícone de Template/Arquivo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-0.5">3. Criação do Arquivo Padrão</h3>
+                    </div>
+                    <!-- TEXTO REVISADO E SEM NEGRITO -->
+                    <p class="text-sm text-gray-700 leading-relaxed">O processo utiliza um Template de Markup (já com filtros, plantas e Tags específicas pré-configuradas) para garantir a padronização e evitar configurações manuais demoradas na vista de federação.</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full shadow-md">Template & Config</span>
+                </div>
+
+                <!-- Card 4: Inserção Automatizada de TAGS (Antigo Card 3) - Cor Azul -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl border-t-8 border-blue-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-start mb-4">
+                        <span class="text-3xl mr-3 text-blue-600">
+                            <!-- Ícone de Automação/Produtividade -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 18V9"/><path d="M10 18h4"/><path d="M7 10l5-5 5 5"/></svg>
+                        </span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-0.5">4. Inserção Automatizada de TAGS</h3>
+                    </div>
+                    <!-- TEXTO REVISADO E SEM NEGRITO -->
+                    <p class="text-sm text-gray-700 leading-relaxed">O comando INSERIR TAGS e TAGUEAR FUROS insere as famílias de marcação/abertura (Furos) e as tags de anotação de forma massiva e inteligente, reduzindo drasticamente o tempo gasto em detalhamento manual.</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full shadow-md">Alta Produtividade</span>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- NOVA SEÇÃO: Treinamento e Tutoriais -->
+        <section class="mb-16 bg-white p-8 rounded-2xl shadow-xl border-l-8 border-gray-400">
+            <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-gray-400 pb-2 mb-6 flex items-center">
+                <span class="text-3xl mr-3 text-gray-600">
+                    <!-- Ícone de Vídeo/Tutorial -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="m15 11-4 2V9l4 2Z"/></svg>
+                </span>
+                Treinamento e Tutoriais
+            </h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Esta seção será atualizada em breve com **tutoriais em vídeo** e guias passo a passo para cada etapa do processo de Markup. 
+                Aguarde o conteúdo que irá detalhar o uso dos comandos de automação e as rotinas de verificação!
+            </p>
+            <div class="bg-gray-100 p-4 rounded-lg text-gray-600 text-sm italic">
+                Status: Conteúdo em preparação.
+            </div>
+        </section>
+
+        <!-- Seção 2: Links Essenciais -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-indigo-400 pb-2 mb-8">Acessos Rápidos e Documentação</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Link para o Fluxograma no Miro -->
+                <a href="https://miro.com/app/board/uXjVJ0V-f3U=/?share_link_id=102294936678" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-l-8 border-indigo-500 flex items-center">
+                         <span class="text-4xl mr-4 text-indigo-600">
+                            <!-- Ícone Miro/Link -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.74 1.74"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </span>
+                        <div>
+                            <p class="text-2xl font-bold text-indigo-800">Fluxograma Interativo</p>
+                            <p class="text-gray-600 text-sm mt-1">Veja o processo completo e detalhado passo a passo no Miro.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Link para o Drive -->
+                <a href="https://drive.google.com/drive/folders/1WKGC9Oxgqik68Nn0FnXSNsFsNRNTehLF?usp=sharing" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-l-8 border-red-500 flex items-center">
+                        <span class="text-4xl mr-4 text-red-600">
+                            <!-- Ícone Google Drive -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 4.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+                        </span>
+                        <div>
+                            <p class="text-2xl font-bold text-red-800">Arquivos e Templates</p>
+                            <p class="text-gray-600 text-sm mt-1">Acesse Templates Revit, famílias e documentação de suporte no Google Drive.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Seção 3: Contato -->
+        <section class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl border-t-8 border-indigo-500">
+            <h2 class="text-3xl font-bold text-gray-800 pb-2 mb-8">Suporte e Contato Direto</h2>
+
+            <p class="text-gray-700 mb-8 leading-relaxed">Em caso de dúvidas sobre o processo, falhas de coordenação ou necessidade de suporte com as automações, utilize os links abaixo para um contato rápido e direto:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Contato WhatsApp (Botão Verde) -->
+                <a href="https://wa.me/5531987874252" target="_blank" rel="noopener noreferrer" class="btn-whatsapp flex items-center justify-center p-4 rounded-lg text-white font-bold text-lg shadow-md hover:shadow-xl transition duration-300">
+                    <!-- Ícone do WhatsApp (inline SVG) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor" class="mr-3">
+                        <path d="M380.9 97.4C339.8 59.3 286.2 38.8 227.1 38.8c-100.9 0-184.2 82.7-184.2 184.2 0 32.5 8.7 64.3 25.2 92.4L37.9 473.1l97.1-24.2c27.8 15.1 59.8 23.1 92.1 23.1h.9c100.9 0 184.2-82.7 184.2-184.2 0-51-21-98.8-55.8-133.5zm-83.3 216.9c-4.1 11.2-8.3 18.2-12.4 18.2-4.1 0-8.2-1.9-12.4-5.8-3.4-3.5-7.9-10.4-12.4-16.7-4.5-6.3-9.1-13.8-13.6-20.2-4.5-6.3-8.8-12.7-13.3-17-4.5-4.3-9.5-6.7-15-6.7s-10.4.9-15.5 1.9c-5.1 1-10.4 2.5-16.8 6.4-6.4 3.9-13 8.9-18.4 13.5-5.5 4.6-10 9.7-13.9 15.3-3.9 5.6-7 11.8-9.3 18.4-2.3 6.6-3.4 13.9-3.4 21.9 0 8.8 1.5 17.6 4.6 25.9 3.1 8.3 7.8 16.5 14.1 24.3 6.3 7.8 14.2 15.1 23.7 21.9 9.5 6.8 20.8 12.8 33.7 18 12.8 5.2 28.1 9.4 46.2 9.4 18.1 0 34.6-4.5 49.3-13.5 14.7-9 26.6-22.3 35.7-39.7 9.1-17.4 13.6-38.3 13.6-63.5 0-17.7-2.9-33.8-8.8-48.4-5.9-14.6-27.1-26.3-37.5zM227.1 432.4h-1.3c-29.3 0-57-8.9-80.9-26.4l-5.6-3.4-58 14.5 14.8-56.7-3.6-5.8c-17.8-28.7-27.1-62.4-27.1-97.7 0-94.8 77-171.7 171.7-171.7 46.4 0 89.9 18 122.9 51s51 76.5 51 122.9c0 94.8-77 171.7-171.7 171.7z"/></svg>
+                    WhatsApp: (31) 98787-4252
+                </a>
+
+                <!-- Contato Email (Botão Cinza/Secundário) -->
+                <a href="mailto:alexandrerodrigues.engcivil@gmail.com" class="btn-primary bg-gray-600 hover:bg-gray-700 flex items-center justify-center p-4 rounded-lg text-white font-bold text-lg shadow-md hover:shadow-xl transition duration-300">
+                    <!-- Ícone de Email -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    E-mail: alexandrerodrigues.engcivil@gmail.com
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="color-primary mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-white opacity-75">
+            Desenvolvido por Alexandre Rodrigues.
+        </div>
+    </footer>
+</body>
+</html>
