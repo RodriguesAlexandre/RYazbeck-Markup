@@ -112,20 +112,46 @@
         </section>
         
         <!-- NOVA SEÇÃO: Treinamento e Tutoriais -->
-        <section class="mb-16 bg-white p-8 rounded-2xl shadow-xl border-l-8 border-gray-400">
-            <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-gray-400 pb-2 mb-6 flex items-center">
-                <span class="text-3xl mr-3 text-gray-600">
-                    <!-- Ícone de Vídeo/Tutorial -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="m15 11-4 2V9l4 2Z"/></svg>
+        <section class="mb-16 bg-white p-8 rounded-2xl shadow-xl border-t-8 border-red-500">
+            <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-red-400 pb-2 mb-6 flex items-center">
+                <span class="text-3xl mr-3 text-red-600">
+                    <!-- Ícone de Vídeo/Tutorial (Livro/Aprender) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
                 </span>
                 Treinamento e Tutoriais
             </h2>
-            <p class="text-lg text-gray-700 mb-4">
-                Esta seção será atualizada em breve com **tutoriais em vídeo** e guias passo a passo para cada etapa do processo de Markup. 
-                Aguarde o conteúdo que irá detalhar o uso dos comandos de automação e as rotinas de verificação!
-            </p>
-            <div class="bg-gray-100 p-4 rounded-lg text-gray-600 text-sm italic">
-                Status: Conteúdo em preparação.
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                 <!-- Link para o Tutorial de Instalação -->
+                <a href="https://drive.google.com/file/d/1-4rWwjPlgtFeHUy8dcyVS7fpEbR7Iaxb/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-red-300 flex items-center">
+                         <span class="text-2xl mr-3 text-red-600">
+                            <!-- Ícone de Play/Vídeo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                        </span>
+                        <div>
+                            <p class="text-base font-bold text-red-800">Tutorial 1: Instalação do Plugin</p>
+                            <p class="text-gray-600 text-xs mt-1">Clique para assistir ao guia passo a passo de como instalar os comandos de automação.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card de Conteúdo Futuro -->
+                <div class="bg-gray-50 p-4 rounded-xl shadow-md border border-gray-300 flex items-center opacity-75">
+                    <span class="text-2xl mr-3 text-gray-500">
+                        <!-- Ícone de Carregando/Em Breve -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9c-1.68 0-3.24.45-4.63 1.25M3 12a9 9 0 0 0 9 9c1.68 0 3.24-.45 4.63-1.25"/></svg>
+                    </span>
+                    <div>
+                        <p class="text-base font-bold text-gray-800">Tutoriais Futuros</p>
+                        <p class="text-gray-600 text-xs mt-1 italic">Guias de uso dos comandos de Coordenação e Inserção de Tags em breve.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-red-50 p-4 rounded-lg text-red-700 text-sm italic border-l-4 border-red-500">
+                **Status:** Os guias detalhados sobre as Etapas Críticas (2 a 4) estão em fase de preparação.
             </div>
         </section>
 
